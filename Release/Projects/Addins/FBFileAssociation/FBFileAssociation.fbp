@@ -1,0 +1,42 @@
+[Project]
+Version=3
+Description=FBEdit File Association
+Api=fb (FreeBASIC),win (Windows)
+Grouping=1
+AddMainFiles=1
+ResExport=rsrc.bi
+AddModuleFiles=true
+CompileIfNewer=false
+IncVersion=false
+RunCmd=false
+FBCType=1
+[Make]
+Module=Module Build,fbc -c
+Recompile=0
+Current=1
+1=Windows dll,fbc -s gui -dll -export -Wl "--entry _DLLMAIN"
+Output=
+Run=
+Delete=
+[File]
+1=FBFileAssociation.bas
+2=FBFileAssociation.bi
+3=FBFileAssociation.rc
+4=RegLib.bas
+5=rsrc.bi
+6=Addins.bi
+
+[FileInfo]
+
+5=0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+3=0,29,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+1=0,230,-1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2=0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+4=0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+6=0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+[TabOrder]
+TabOrder=1
+[BreakPoint]
+2=
+1=
+6=
